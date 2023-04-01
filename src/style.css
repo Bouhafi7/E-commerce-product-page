@@ -666,6 +666,12 @@ main .container .imgs-container .pre-img{
     transition: all .2s;
 }
 
+@media (max-width:781px){
+    .light-box, .overlay{
+        display: none;
+    }
+}
+
 .light-box.active{
     z-index: 4;
     opacity: 1;
@@ -679,6 +685,12 @@ main .container .imgs-container .pre-img{
 .light-box .head .light-box-img{
     width: 500px;
     border-radius: 10px;
+}
+
+@media (max-width:991px){
+    .light-box .head .light-box-img {
+        width: 400px;
+    }
 }
 
 .light-box .head .close-light-box{
@@ -740,6 +752,12 @@ main .container .imgs-container .pre-img{
     transition: all .2s;
 }
 
+
+@media (max-width:991px){
+    .light-box .foot img {
+        width: 75px;
+    }
+}
 
 .light-box .foot > img.active{
     opacity: .6;
