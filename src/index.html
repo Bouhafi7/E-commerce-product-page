@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce product page</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="container">
+            <img src="images/icon-menu.svg" alt="" class="menu-icon">
+            <img src="images/logo.svg" alt="" class="logo">
+            <ul class="menu">
+                <li><a href="#">collections</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="cart-profile">
+                <div>
+                    <img src="images/icon-cart.svg" alt="" class="cart-icon">
+                    <div class="cart">
+                        <p class="title">cart</p>
+                        <div class="products">
+                            <p>your cart is empty</p>
+                        </div>
+                        <div class="checkout">checkout</div>
+                    </div>
+                    <div class="num-products">01</div>
+                </div>
+                <img src="images/image-avatar.png" alt="" class="profile">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="imgs-product">
+                <img src="images/image-product-1.jpg" alt="" class="big-pic">
+                <div class="imgs-container">
+                    <img src="images/image-product-1.jpg" alt="">
+                    <img src="images/image-product-2.jpg" alt="">
+                    <img src="images/image-product-3.jpg" alt="">
+                    <img src="images/image-product-4.jpg" alt="">
+                    <i class="fa-solid fa-chevron-right next-img"></i>
+                    <i class="fa-solid fa-chevron-left pre-img"></i>
+                </div>
+                <div class="imgs-thumbnails">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnails active" data-num=1>
+                    <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnails" data-num=2>
+                    <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnails" data-num=3>
+                    <img src="images/image-product-4-thumbnail.jpg" alt="" class="thumbnails" data-num=4>
+                </div>
+            </div>
+            <div class="content">
+                <h4>sneaker company</h4>
+                <h1>fall limited edition sneakers</h1>
+                <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price-discount">
+                    <p class="price">$125.00</p>
+                    <div class="discount">50%</div>
+                </div>
+                <p class="previous-price">$250.00</p>
+                <div class="btns">
+                    <div class="add-product">
+                        <img src="images/icon-minus.svg" alt="" class="decrease">
+                        <p class="product-count">1</p>
+                        <img src="images/icon-plus.svg" alt="" class="increase">
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="light-box">
+        <div class="head">
+            <img src="images/image-product-1.jpg" alt="" class="light-box-img">
+            <i class="fa-solid fa-xmark close-light-box"></i>
+            <i class="fa-solid fa-chevron-right next"></i>
+            <i class="fa-solid fa-chevron-left pre"></i>
+        </div>
+        <div class="foot">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" data-num=1 class="light-box-thumbnails active">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" data-num=2 class="light-box-thumbnails">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" data-num=3 class="light-box-thumbnails">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" data-num=4 class="light-box-thumbnails">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
